@@ -26,9 +26,9 @@
 </head>
 <body>
     <div>
-        <h1>Rise Online</h1>
+        <h1>Rise Online Güncelleme Sayaci</h1>
         <p id="lastUpdate">Son Güncelleme: <span id="lastUpdateTime">2024-11-30T12:00:00Z</span></p>
-        <div id="timer">Rise Online Son Güncellemeden Beri: 0 days 0 hours 0 minutes 0 seconds</div>
+        <div id="timer">Rise Online Son Güncellemeden Beri: 0 gün 0 saat 0 dakika 0 saniye gecti</div>
     </div>
 
     <script>
@@ -44,7 +44,7 @@
             const minutes = Math.floor((elapsedSeconds % 3600) / 60);
             const seconds = elapsedSeconds % 60;
 
-            document.getElementById('timer').textContent = `Rise Online Son Güncellemeden Beri: ${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+            document.getElementById('timer').textContent = `Rise Online Son Güncellemeden Beri: ${days} gün ${hours} saat ${minutes} dakika ${seconds} saniye gecti.`;
         }
 
         setInterval(updateTimer, 1000);
